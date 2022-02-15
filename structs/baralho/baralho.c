@@ -1,17 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "carta.h"
-
-#define TOTAL 110
-
-typedef struct baralho {
-    Carta *cartas[TOTAL];
-    int quantidade_cartas;
-} Baralho;
-
-Baralho *criarBaralho();
-void preencherBaralho(Baralho *b);
+#include "baralho.h"
 
 Baralho *criarBaralho() {
     Baralho *b = (Baralho *) malloc(sizeof(Baralho));
@@ -25,7 +13,7 @@ void preencherBaralho(Baralho *b) {
     int i, j = 0;
     char cor;
     
-    for(i = 0; i < TOTAL; i++) {
+    for(i = 0; i < TOTAL_CARTAS; i++) {
         j++;
         
         if(i % 10 == 0) {
