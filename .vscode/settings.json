@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "string.h": "c",
+    "baralho.h": "c",
+    "monte.h": "c"
+  }
+}
